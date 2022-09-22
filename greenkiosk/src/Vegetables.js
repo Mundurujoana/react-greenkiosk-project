@@ -1,4 +1,5 @@
 
+import './Vegetables.css';
 import React, {useEffect, useState} from 'react';
 
 
@@ -22,7 +23,7 @@ console.log(`loading, ${loading}`)
 return <div>lodaing...........</div>
 }
 
-return (<div>
+return (<div className='Vegetables'>
     {vegetables.map(vegetable=>(
         <div key={vegetable.id}>
     <p>{vegetable.name}</p>
